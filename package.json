@@ -1,5 +1,6 @@
 {
-  "name": "ecommerce-akshay",
+  "homepage": "https://akshaykankal.github.io/react_calculator",
+  "name": "react_calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +21,9 @@
     "eject": "react-scripts eject",
     "css": "postcss ./src/styles/tailwind.css -o ./src/styles/tailwind.generated.css",
     "prestart": "npm run css",
-    "prebuild": "npm run css"
+    "prebuild": "npm run css",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
